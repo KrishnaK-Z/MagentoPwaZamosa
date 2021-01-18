@@ -29,6 +29,7 @@
     "@magento/venia-drivers": "src/drivers"
   },
   "dependencies": {
+    "@fooman/venia-ui-override-resolver": "^1.0.0-rc.1",
     "@magento/pwa-buildpack": "~7.0.0",
     "@zamosa/theme": "file:./src/@zamosa/theme",
     "bourbon": "^7.0.0"

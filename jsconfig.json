@@ -1,0 +1,10 @@
+{
+    "compilerOptions": {
+        "baseUrl": ".",
+        "paths": {
+            "@zamosa/theme/*": [
+                "../src/@zamosa/theme/*"
+            ]
+        }
+    }
+}

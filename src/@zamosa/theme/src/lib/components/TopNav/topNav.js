@@ -1,5 +1,6 @@
 import React from 'react';
-import { useMegaMenu } from '../../../talons/MegaMenu/useMegaMenu';
+// import { useMegaMenu } from '../../../talons/MegaMenu/useMegaMenu';
+import { useMegaMenu } from '@zamosa/theme/src/talons/MegaMenu/useMegaMenu';
 import defaultClasses from './topNav.scss';
 import CategoryTree from '../CategoryTree';
 import logo from './img/cd-logo.svg';

@@ -14,7 +14,8 @@ import { Util } from '@magento/peregrine';
 import { Adapter } from '@magento/venia-drivers';
 import store from './store';
 import app from '@magento/peregrine/lib/store/actions/app';
-import App, { AppContextProvider } from '@magento/venia-ui/lib/components/App';
+import App  from '@magento/venia-ui/lib/components/App';
+import ZamosaContextProvider from './@zamosa/theme/src/context/ContextProvider';
 
 import { registerSW } from './registerSW';
 
@@ -114,9 +115,9 @@ const apolloLink = ApolloLink.from([
 
 ReactDOM.render(
     <Adapter apiBase={apiBase} apollo={{ link: apolloLink }} store={store}>
-        <AppContextProvider>
+        <ZamosaContextProvider>
             <App />
-        </AppContextProvider>
+        </ZamosaContextProvider>
     </Adapter>,
     document.getElementById('root')
 );

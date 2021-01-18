@@ -19,7 +19,7 @@ module.exports = targets => {
         routes.push({
             name: "MyGreetingRoute",
             pattern: "/greeting",
-            path: '@zamosa/theme/src/lib/components/TopBar'
+            path: '@zamosa/theme/src/lib/components/TopNav'
         });
     });
 }

@@ -18,5 +18,8 @@
     "targets": {
       "intercept": "src/intercept.js"
     }
+  },
+  "dependencies": {
+    "react-feather": "^2.0.9"
   }
 }

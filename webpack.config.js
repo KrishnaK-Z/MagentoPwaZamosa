@@ -3,6 +3,7 @@ const {
     graphQL: { getMediaURL, getStoreConfigData, getPossibleTypes }
 } = require('@magento/pwa-buildpack');
 const { DefinePlugin } = require('webpack');
+const path = require('path');
 const HTMLWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = async env => {
@@ -83,6 +84,10 @@ module.exports = async env => {
             'sass-loader'
         ]
     });
+
+    config.resolve.alias = {
+        '@zamosa/theme': path.resolve(__dirname, 'src/@zamosa/theme')
+    };
 
     return config;
 };
